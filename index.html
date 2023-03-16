@@ -10,6 +10,7 @@
 
  </head>
 <body >
+  <div class="overlay" style="z-index: 1;"> </div>
 <!-- Menu de navegação -->
   <nav class="navbar navbar-expand-md navbar-light" id="menu-nav">
      <img  class="navbar-brand ml-5" src="images/logo.svg" alt="Logo tipo do banco">
@@ -59,10 +60,11 @@
 
 </div>
 
-    <div id="celular" class="position-relative d-flex justify-content-center">
-      <img id="img-fundo"   class="img-fluid" src="images/bg-intro-desktop.svg" alt="">
+    <div id="celular" class=" d-flex justify-content-center">
+      <div id="img-fundo" ></div>
+      <!-- <img id="img-fundo"   class="img-fluid" src="images/bg-intro-desktop.svg" alt=""> -->
         <img id="img-fundo2"   class="img-fluid" src="images/bg-intro-mobile.svg" alt="">
-        <img id="img-celular"   class="img-fluid" src="images/image-mockups.png" alt="">
+        <img id="img-celular"    src="images/image-mockups.png" alt="">
     </div>
   </div>
 <!-- Início da seção 2 -->
@@ -132,7 +134,7 @@
       </div>
   <!-- cards da section 3 -->
       <div class="d-flex" id="container-img-card">
-        <div class="card bg-light" style="width: 18rem;">
+        <div class=" card bg-light" style="width: 18rem;">
           <div class="img-section3" >
             <img src="images/image-currency.jpg" class=" img-section3 card-img-top" alt="...">
           </div>
@@ -187,7 +189,7 @@
 <div class="d-flex justify-content-between" id= "container-footer">
 
   <div  class = " d-flex flex-column justify-content-between "id="container-redes-sociais-footer"> 
-    <img class="logo-marca" src="images/logo.svg" alt="Logo marca" fill="white">
+    <img class="logo-marca" src="images/logo-dark.svg" alt="Logo marca" fill="white">
     <div  id="redes-sociais"> 
       <a href="#" class="rede-social"><img  src="images/icon-facebook.svg" alt="Logo marca"></a>
       <a href="#" class="rede-social" > <img src="images/icon-youtube.svg" alt="Logo marca"></a> 
@@ -228,11 +230,11 @@ $("#btn-menu").click(function(){
   if($("#hamburguer").css("display") == "block"){
     $("#hamburguer").css("display","none")
     $("#fechar").css("display","block")
-  console.log("God")
+    $(".overlay").css("opacity","1")
   }else{
     $("#hamburguer").css("display","block")
     $("#fechar").css("display","none")
-    
+    $(".overlay").css("opacity","0")
   }
  
   
