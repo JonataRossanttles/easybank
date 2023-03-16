@@ -34,13 +34,16 @@ p{
 border-bottom: 3px solid ;
 border-image: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
 border-image-slice: 1;
+
 }
 
 .button-request{
     font-family: var(--font-principal);
     border-radius:20px !important;
-    font-size: 12px !important;
+    font-size: 13px !important;
 color: hsl(0, 0%, 100%) !important;
+width:150px !important;
+    padding:10px !important;
 background-image: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%) );
 }
 
@@ -164,7 +167,7 @@ footer{
 }
 #button-request-footer{
     width:150px;
-    padding:10px
+    padding:10px;
 }
 .rede-social:not(:first-child){
     margin-left: 10px;
@@ -175,7 +178,8 @@ footer{
 }
 .logo-marca{
     background-color:white;
-    mix-blend-mode: multiply;
+    border-radius: 6px;
+    padding: 10px;
 }
 .container-btn-footer{
     align-items: end;
@@ -292,12 +296,9 @@ footer{
     display: flex;
     justify-content: center;
 }
-.nav-link:hover{
-    background-image: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
-    text-align: center;
-    border-radius: 30px;
+.link-navigation:hover{
+
     border: 3px solid transparent;
-    color: white !important;
     }
    
     
