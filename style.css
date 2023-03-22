@@ -1,7 +1,7 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200&family=Josefin+Sans:wght@400;700&family=League+Spartan:wght@700&family=Public+Sans:wght@300;400;700&display=swap');
 :root{
-    --font-principal: 'Roboto', sans-serif;
+    --font-principal: 'Public Sans', sans-serif;
     --size: 18px
 }
 
